@@ -27,7 +27,19 @@
   }
 </script>
 
-<style scoped>
+<style>
+  body{
+    background-color: #333;
+    color: #fff;
+  }
+
+  a {
+    color: red;
+  }
+
+  .teste{
+    background-color: #000;
+  }
 </style>
 
 
