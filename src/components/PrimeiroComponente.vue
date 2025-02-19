@@ -13,7 +13,7 @@
 <template>
     <div>
         <h1>Olá Mundo!</h1>
-        <p>Meu nome é {{ nome }} e estudo programação</p>
+        <p>Meu nome é {{ nome }} e estudo {{ estudo }}</p>
     </div>
 </template>
 
