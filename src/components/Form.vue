@@ -1,7 +1,7 @@
 <template>
     <form action="">
-        <InputText/>
-        <InputText/>
+        <InputText/><br>
+        <InputText/><br>
         <Submit/>
     </form>
 </template>
