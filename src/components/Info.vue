@@ -2,11 +2,13 @@
     <div>
         <p v-if="estaTrabalhando">Estou trabalhando no momento.</p>
         <p v-else>Não estou trabalhando no momento</p>
-        <p>Utilizo as tecnologias:</p>
+        <p>Utilizo as seguintes tecnologias para back-end:</p>
         <ul>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>Python</li>
+            <li v-for="(technology, index) in backendtTechnologies" :key="index">{{ technology }}</li>
+        </ul>
+        <p>Utilizo as seguintes tecnologias para front-end:</p>
+        <ul>
+            <li v-for="technology in frontendTechnologies" :key="technology.id">{{ technology.language }}</li>
         </ul>
         <Form />
         <p v-if="4>2">TESTANDO</p>
@@ -34,7 +36,13 @@ export default{
             mostrarEmail: false,
             email: 'andri@gmail.com',
             meuLink: 'https://google.com',
-            textoBotao: 'Mostrar email'
+            textoBotao: 'Mostrar email',
+            backendtTechnologies: ['Javascript', 'PHP', 'Python', 'Node.js', 'Laravel'],
+            frontendTechnologies: [
+                {id:1, language: 'HTML'},
+                {id:2, language: 'CSS'},
+                {id:3, language: 'Javascript'}
+            ]
         }
     },
     methods: {
@@ -50,6 +58,11 @@ export default{
 }
 </script>
 
+<style>
+    .paragrafo-pai{
+        color: red;
+    }
+</style>
 
 
 
