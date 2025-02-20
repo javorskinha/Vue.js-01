@@ -30,11 +30,13 @@ export default{
         Form,
         Picture
     },
+    props: {
+        email: String,
+        estaTrabalhando: Boolean
+    },
     data (){
         return{
-            estaTrabalhando: true,
             mostrarEmail: false,
-            email: 'andri@gmail.com',
             meuLink: 'https://google.com',
             textoBotao: 'Mostrar email',
             backendtTechnologies: ['Javascript', 'PHP', 'Python', 'Node.js', 'Laravel'],
